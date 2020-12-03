@@ -16,12 +16,5 @@ with open('input.txt') as f:
         if lower_bound <= occurence <= upper_bound:
             number_of_correct_passwords += 1
 
-print(number_of_correct_passwords)
-
-print(number_of_correct_passwords_part_two)
-# for number in list_of_numbers:
-#     for secondNumber in list_of_numbers:
-#         for thirdNumber in list_of_numbers:
-#             sum = number + secondNumber + thirdNumber
-#             if sum == 2020:
-#                 print(str(number*secondNumber*thirdNumber))
+print(f"Solution Part 1: {number_of_correct_passwords}")
+print(f"Solution Part 2: {number_of_correct_passwords_part_two}")
