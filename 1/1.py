@@ -6,7 +6,13 @@ with open('input.txt') as f:
 
 for number in list_of_numbers:
     for secondNumber in list_of_numbers:
+        sum_of_numbers = number + secondNumber
+        if sum_of_numbers == 2020:
+            print(f'Solution Part One: {str(number*secondNumber)}')
+
+for number in list_of_numbers:
+    for secondNumber in list_of_numbers:
         for thirdNumber in list_of_numbers:
-            sum = number + secondNumber + thirdNumber
-            if sum == 2020:
-                print(str(number*secondNumber*thirdNumber))
+            sum_of_numbers = number + secondNumber + thirdNumber
+            if sum_of_numbers == 2020:
+                print(f'Solution Part Two: {str(number*secondNumber*thirdNumber)}')
